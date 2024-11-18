@@ -9,6 +9,10 @@
     --tertiary-color: #42467d;
 }
 
+body {
+    background-color: var(--secondary-color);
+}
+
 header nav {
     display: flex;
     align-items: center;

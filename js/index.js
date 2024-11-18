@@ -53,7 +53,6 @@ function showFilteredResults(e) {
 
 function filterCars(carInfo) {
     const {year, make, model, mileage, price, color, gasMileage} = carInfo;
-    console.log(`Mileage value: ${mileageTag.value}\nMileage placeholder: ${mileageTag.placeholder}\n\n`);
     return year >= minYear.value 
     && year <= maxYear.value 
     && filteredMakesList.includes(make.toLowerCase()) 
