@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Car Dealership</title>
+    
+    <!-- Link all the cars in usedCars.js -->
+    <script type="module" src="./js/usedCars.js" defer></script>
+    
+    <!-- Link index.js -->
+    <script type="module" src="./js/index.js" defer></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="left-col">
+                <p>Used Car Dealership</p>
+            </div>
+
+            <div class="right-col">
+                <p>123 John Smith St</p>
+                <p>Sales: 123-456-7890</p>
+                <p>Service: 222-444-8888</p>
+            </div>
+    
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="filter">
+
+            <form id="filter-properties">
+
+                <div class="year">
+
+                    <div class="min">
+                        <span id="min-year-text">Min Year:</span>
+                        <input type="range" name="min-year" id="min-year" min="2014" max="2020" value="2014">
+                        <span id="min-year-number">2014</span>
+                    </div>
+
+                    <div class="max">
+                        <span id="max-year-text">Max Year:</span>
+                        <input type="range" name="max-year" id="max-year" min="2014" max="2020" value="2020">
+                        <span id="max-year-number">2020</span>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="makes">
+                    <div class="first-row">
+                        <span id="makes-text">Makes:</span>
+                    </div>
+
+                    <div class="second-row">
+                        <div>
+                            <input type="checkbox" name="toyota" id="toyota">
+                            <label for="toyota">Toyota</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="honda" id="honda">
+                            <label for="honda">Honda</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ford" id="ford">
+                            <label for="ford">Ford</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="nissan" id="nissan">
+                            <label for="nissan">Nissan</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="chevrolet" id="chevrolet">
+                            <label for="chevrolet">Chevrolet</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="volkswagen" id="volkswagen">
+                            <label for="volkswagen">Volkswagen</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="hyundai" id="hyundai">
+                            <label for="hyundai">Hyundai</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="subaru" id="subaru">
+                            <label for="subaru">Subaru</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="mazda" id="mazda">
+                            <label for="mazda">Mazda</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="kia" id="kia">
+                            <label for="kia">Kia</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="dodge" id="dodge">
+                            <label for="dodge">Dodge</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="cadillac" id="cadillac">
+                            <label for="cadillac">Cadillac</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="jaguar" id="jaguar">
+                            <label for="jaguar">Jaguar</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="tesla" id="tesla">
+                            <label for="tesla">Tesla</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="porsche" id="porsche">
+                            <label for="porsche">Porsche</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="lexus" id="lexus">
+                            <label for="lexus">Lexus</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="bmw" id="bmw">
+                            <label for="bmw">BMW</label>
+                        </div>
+                    </div>
+                    <div class="third-row">
+                        <button id="select-all-makes">Select all</button>
+                        <button id="deselect-all-makes">Deselect all</button>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <div class="mileage-price-combined">
+                    <div class="mileage">
+                        <span id="mileage-text">Mileage Under:</span>
+                        <input type="number" name="mileage" id="mileage" min="0" max="99999" placeholder="99999">
+                        <span id="mileage-mpg">mpg</span>
+                    </div>
+                    
+                    <div class="price">
+                        <span id="price-text">Max Price:</span>
+                        <input type="number" name="price" id="price" min="0" max="99999" placeholder="99999">
+                        <span id="price-usd">USD</span>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="colors">
+                    <div class="first-row">
+                        <span id="colors-text">Colors:</span>
+                    </div>
+                    <div class="second-row">
+                        <div>
+                            <input type="checkbox" name="silver" id="silver">
+                            <label for="silver">Silver</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="white" id="white">
+                            <label for="white">White</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="black" id="black">
+                            <label for="black">Black</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="blue" id="blue">
+                            <label for="blue">Blue</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="red" id="red">
+                            <label for="chevrolet">Red</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="gray" id="gray">
+                            <label for="gray">Gray</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="green" id="green">
+                            <label for="green">Green</label>
+                        </div>
+                    </div>
+                    <div class="third-row">
+                        <button id="select-all-colors">Select all</button>
+                        <button id="deselect-all-colors">Deselect all</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="buttons">
+                    <button type="submit" id="filter-btn">Filter</button>
+                    <button type="reset" id="reset-btn">Reset</button>
+                </div>
+                
+            </form>
+
+        </section>
+
+        <!-- placeholder html location for dynamic contents -->
+        <div id="result"></div>
+    </main>
+
+    <footer>
+        
+    </footer>
+    
+</body>
+</html>

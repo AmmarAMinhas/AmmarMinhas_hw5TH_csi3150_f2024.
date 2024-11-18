@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --primary-color: #0F084B;
+    --secondary-color: #eef9fa;
+    --tertiary-color: #42467d;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: var(--primary-color);
+}
+
+header nav p {
+    padding: 20px 30px;
+    /* background-color: #c5afaf; */
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    border: 1px solid #000;
+    font-weight: 600;
+}
+
+header nav .left-col p {
+    padding: 15px 30px;
+    font-size: 1.75rem;
+}
+
+header nav .right-col {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+
+main {
+    font-size: 1rem;
+    display: flex;
+}
+
+.filter {
+    flex: 1;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.filter hr {
+    border: 1px solid var(--primary-color);
+    margin: -4px 0;
+    width: 100%;
+}
+
+.filter form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+
+.filter input[type="checkbox"]:checked {
+    accent-color: var(--primary-color);
+}
+
+.year {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.year input {
+    margin: 0 10px;
+    accent-color: var(--primary-color);
+}
+
+.makes {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.makes .second-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: flex-start;
+    gap: 10px;
+    width: max-content;
+}
+
+.mileage-price-combined {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mileage, .price {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 5px;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.colors .second-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+main button {
+    width: 90px;
+    height: 25px;
+    margin-right: 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    cursor: pointer;
+    gap: 50px;
+}
+
+.buttons button {
+    flex: 1;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: none;
+    border-radius: 10px;
+}
+
+.buttons button:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+    color: var(--tertiary-color);
+}
+
+.makes button:hover, .colors button:hover {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+}
+
+#result {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-color);
+    padding-top: 10px;
+}
+
+#result .card {
+    max-width: 300px;
+    max-height: fit-content;
+    padding: 10px 40px;
+    text-align: center;
+    margin: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#result #no-result-text {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+}
